@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BookmarkApplication</string>
+    <string name="add">추가</string>
+
+    <string name="input">http:// or http:// ...</string>
+    <string name="wrong">올바른 URL 형식이 아닙니다</string>
+
+</resources>

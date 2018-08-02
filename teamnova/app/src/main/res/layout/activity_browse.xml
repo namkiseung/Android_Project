@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.namkit.namki.teamnova.Menu4_Bookmark.BrowseActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="#4d66dc"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="URL 스크랩"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/lv_bookmark"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/wakeup_floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/book_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+            app:fab_label="삭제"
+            app:fab_size="mini"></com.github.clans.fab.FloatingActionButton>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/float_book_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_box_black_24dp"
+            app:fab_label="추가"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/book_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pageview_black_24dp"
+            app:fab_label="바로가기"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+    <Button
+        android:id="@+id/news_basic_btn_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignParentBottom="true"
+        android:text="선택삭제"
+        android:visibility="gone" />
+</RelativeLayout>

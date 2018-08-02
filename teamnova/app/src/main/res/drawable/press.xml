@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    //눌렀을때 발생하는 이벤트 기입
+
+<item android:drawable="@android:color/darker_gray"
+    android:state_pressed="true"/>
+    <item android:drawable="@android:color/white"/>
+
+</selector>

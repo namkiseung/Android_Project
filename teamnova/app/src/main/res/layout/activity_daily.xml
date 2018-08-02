@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/daily_LinearLayout"
+    tools:context="com.namkit.namki.teamnova.Menu3_Daily.Daily">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dailytoolBar"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#4d66dc"
+        android:textColor="#000000"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="개발일지"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:id="@+id/btn_daily_del"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="삭제할 데이터를 체크 후 눌러주세요"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/tv"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="#3276a0"
+        android:hint="검색어를 입력하세요"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/my_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/float_daily_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_box_black_24dp"
+        app:fab_label="공유"
+        app:fab_size="normal" />
+
+
+</RelativeLayout>
+</LinearLayout>

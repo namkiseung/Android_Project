@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:text="folio"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_margin="10dp"
+    android:background="#891b6b86"/>
+<EditText
+    android:id="@+id/idedittext"
+    android:cursorVisible="true"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:textColor="#999999"
+    android:hint="아이디 : "/>
+
+<EditText
+    android:id="@+id/pwedittext"
+    android:cursorVisible="true"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/idedittext"
+    android:password="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:textColor="#999999"
+    android:hint="비밀번호 : "/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_margin="10dp"
+    android:background="#891b6b86"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="#fafffa"
+        android:text="로그인"/>
+    <Button
+        android:id="@+id/joinbtn"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="#fafffa"
+        android:text="회원가입"/>
+</LinearLayout>
+</LinearLayout>
+

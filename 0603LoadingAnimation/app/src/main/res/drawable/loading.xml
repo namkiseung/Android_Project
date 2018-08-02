@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/youtubeicon1" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon2" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon3" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon4" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon5" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon6" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon7" android:duration="70"/>
+    <item android:drawable="@drawable/youtubeicon8" android:duration="70"/>
+
+</animation-list>

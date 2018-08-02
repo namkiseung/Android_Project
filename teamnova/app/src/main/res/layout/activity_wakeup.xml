@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.namkit.namki.teamnova.Menu2_Wakeup.Wakeup">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dailytoolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4d66dc"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="기상인증"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--<Button
+        android:id="@+id/btn_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="앨범" />-->
+
+
+    <!--   <Button
+           android:id="@+id/wake_btn_del"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/dailytoolBar"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:visibility="visible"
+           android:text="선택삭제" />-->
+
+    <!--<Button
+        android:id="@+id/wake_btn_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:text="추가" />-->
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dailytoolBar"></ListView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/wakeup_floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/wake_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+            app:fab_label="삭제"
+            app:fab_size="mini"></com.github.clans.fab.FloatingActionButton>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/float_wakeup_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_box_black_24dp"
+            app:fab_label="게시글쓰기"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fwshared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_black_24dp"
+            app:fab_label="공유"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <Button
+        android:id="@+id/wakeup_basic_btn_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignParentBottom="true"
+        android:text="선택삭제"
+        android:visibility="gone" />
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/float_wakeup_add"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_margin="16dp"
+          android:tooltipText="추가"
+          app:fab_size="mini"></android.support.design.widget.FloatingActionButton>-->
+</RelativeLayout>

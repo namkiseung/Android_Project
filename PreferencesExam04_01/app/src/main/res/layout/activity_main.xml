@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.namkit.namki.preferencesexam04_01.MainActivity">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Hello World!"
+         />
+
+    <Button
+        android:text="입력완료"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextButton"/>
+    <Button
+        android:text="다음"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aaaaa"/>
+</LinearLayout>

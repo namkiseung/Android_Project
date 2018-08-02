@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Like">
+        <item>미르</item>
+        <item>가나</item>
+        <item>토고</item>
+        <item>남공</item>
+        <item>프졸</item>
+    </string-array>
+</resources>

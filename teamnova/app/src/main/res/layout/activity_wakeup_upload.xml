@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.namkit.namki.teamnova.Menu2_Wakeup.WakeupUpload">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="갤러리"
+        android:id="@+id/btnbtn"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(등록할 이미지)"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목 : "
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+        <EditText
+        android:id="@+id/edit1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="입력하시오"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/imageurl"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:text="URL정보"
+            android:textSize="15dp"
+            android:textColor="#4b0606"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#4b0606"
+        android:text="날짜 자동입력"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="등록완료"
+        android:id="@+id/btn_image_send"/>
+</LinearLayout>

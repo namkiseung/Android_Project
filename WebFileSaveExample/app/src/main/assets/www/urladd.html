@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE> New Document </TITLE>
+  <style>
+	html, * {
+		font-size:16px;
+	}
+	body {text-align:center;background-color:#FFE3FF}
+	div {
+		text-align:center;
+		padding-top:10px;
+		color:blue;
+	}
+  </style>
+
+  <script>
+	function displayMsg(){
+	    var str = "동일한 사이트가 등록되어 있습니다.";
+		document.getElementById('msg').innerText = str;
+		document.getElementById('url').value='';
+		<!--document.getElementById('url').focus();-->
+	}
+	function setMsg(msg){
+		document.getElementById('msg').innerText = msg;
+	}
+	function siteAdd(){
+		var sitename = document.getElementById('sitename');
+		if(sitename.value==''){
+			setMsg('사이트명을 입력하세요');
+			sitename.focus();
+			return;
+		}
+		var url = document.getElementById('url');
+		if(url.value==''){
+			setMsg('URL을 입력하세요');
+			url.focus();
+			return;
+		}
+		myApp.addSite(url.value, sitename.value);
+    }
+	function showUrl(){
+        myApp.showUrl();
+    }
+  </script>
+</HEAD>
+
+<BODY style="text-align:center;background-color:#FFCCFF">
+<input type="button" value="URL 보이기" onclick="showUrl()">
+<h3>즐겨찾기를 추가해 보세요</h3>
+<TABLE style="background-color:#FFF2FF" align="center">
+  <TR>
+    <TD>사이트명</TD>
+    <TD><INPUT TYPE="text" id="sitename"></TD>
+  </TR>
+  <TR>
+    <TD>url</TD>
+    <TD><INPUT TYPE="text" id="url"></TD>
+  </TR>
+  <TR>
+    <TD colspan="2" align="center"><input type="button" value="즐겨찾기추가" onclick="siteAdd()"></TD>
+  </TR>
+</TABLE>
+<div id='msg' onclick=""></div>
+</BODY>
+</HTML>

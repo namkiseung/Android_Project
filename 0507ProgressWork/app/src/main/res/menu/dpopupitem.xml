@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/red"
+        android:title="(빨간) 작업중"/>
+    <item
+        android:id="@+id/green"
+        android:title="(초록) 여유" />
+    <item
+        android:id="@+id/yellow"
+        android:title="(노랑) 주의" />
+    <item
+        android:id="@+id/black"
+        android:title="(검정) 오프라인" />
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.namkit.namki.a0507handlerusing.MainActivity">
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="text"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btn_thread_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_count"
+        android:text="Thread Start!!"
+        android:onClick="onClick"
+
+        />
+
+    <Button
+        android:id="@+id/btn_thread_stop_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_thread_start"
+        android:text="Send Thread Stop Message!!"
+        android:onClick="onClick"
+        />
+
+</RelativeLayout>
